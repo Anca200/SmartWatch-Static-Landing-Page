@@ -233,7 +233,7 @@ nav{
 
     .about_section .about-wrapper{
         width: 90%;
-        min-height: 130vh;
+        height: auto;
         margin: 0 auto;
         display: grid;
         grid-template-columns:1fr 1fr;
@@ -899,11 +899,11 @@ nav{
     .about_section .about-wrapper{
         grid-template-columns: 1fr;
         margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .about_section .about-wrapper .container{
-        width: 100%;
-        padding: 1rem;
+        width: 90%; 
     }
     
     /*Text*/
@@ -920,6 +920,8 @@ nav{
 
     .about_section .about-wrapper .container img{
         width: 100%;
+        padding:0 1rem;
+        box-shadow: none;
     }
 
     .about_section .about-wrapper .img-1:after{
@@ -1002,6 +1004,8 @@ nav{
 
         .footer-columns{
         width: 100%;
+        gap: 10px;
+        justify-content: center;
         }
 
         .social{
