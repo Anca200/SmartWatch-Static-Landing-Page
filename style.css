@@ -835,7 +835,7 @@ nav{
         top: 0;
         left: 0;
         width: 250px;
-        height: 100vh; /* Change from 100% to 100vh */
+        height: 100svh;
         list-style: none;
         background-color: var(--color-2--);
         color: var(--TitleColor--);
