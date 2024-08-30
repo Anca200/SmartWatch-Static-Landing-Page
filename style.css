@@ -971,10 +971,12 @@ nav{
 
         .review_section .review-wrapper{
             flex-direction: column;
-            padding: 1rem;
+            width: 100%;
             gap: 50px;
         }
-
+        .review-container{
+            padding: 1rem;
+        }
         .review-wrapper .review-container:nth-child(3){
             margin-bottom: 50px;
         }
