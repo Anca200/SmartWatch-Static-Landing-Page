@@ -830,35 +830,44 @@ nav{
         z-index: 3;
     }
 
-    .navLinks{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100svh;
-        list-style: none;
-        background-color: var(--color-2--);
-        color: var(--TitleColor--);
-        flex-direction: column;
-        font-size: 1.5rem;
-        align-items: center;
-        display: none;
-        overflow-y: auto;
-    }
+   /* Initial hidden state for the side navigation */
+.navLinks {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start off-screen */
+    width: 250px;
+    height: 100svh;
+    list-style: none;
+    background-color: var(--color-2--);
+    color: var(--TitleColor--);
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+    display: flex;
+    overflow-y: auto;
+    transition: transform 0.3s ease, left 0.3s ease; /* Smooth transition */
+    opacity: 0; /* Hidden by default */
+    pointer-events: none; /* Prevent clicking when hidden */
+}
+
+/* When the side nav is open */
+.navLinks.active {
+    left: 0;
+    opacity: 1;
+    pointer-events: auto; /* Allow clicking when visible */
+}
     
-    .navLinks a{
-        text-decoration: none;
-        color: inherit;
-        margin-top: 50px;
-    }
-
+/* Links */
+.navLinks a {
+    text-decoration: none;
+    color: inherit;
+    margin-top: 50px;
+}
     /*Nav Menu*/
-
-    .fa-bars{
+    .hamburgerMenu i {
         color: var(--TitleColor--);
         font-size: 2rem;
     }
-
     /*Hero Section*/
 
     .hero_section{
