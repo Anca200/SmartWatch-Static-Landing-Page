@@ -822,7 +822,7 @@ nav{
 
 /*Mobile and Tablet*/
 
-@media (min-width:320px) and (max-width:1025px){
+@media (min-width:320px) and (max-width:1081px){
 
     /*Nav*/
 
@@ -965,65 +965,122 @@ nav{
           bottom: 50px;
         }
 
-        /*Contact Section*/
+  /* Contact Section */
+    .contact_section {
+        padding: 10px; 
+        align-content: center;
+    }
 
-        .contact_section .contact-title{
-            width: 100%;
-            padding: 1rem;
-        }
-        .contact_section  .contact-wrapper{
-            flex-direction: column;
-            width: 90%;
-            height: auto;
-        }
+    /* Title */
+    .contact_section .contact-title {
+        width: 100%; 
+        padding: 0 15px; 
+    }
 
-        /*Review Section*/
+    .contact_section .contact-title h2 {
+        font-size: 2rem; 
+        margin-bottom: 15px; 
+    }
 
-        .review_section .review-wrapper{
-            flex-direction: column;
-            width: 100%;
-            gap: 50px;
-        }
-        .review-container{
-            padding: 1rem;
-        }
-        .review-wrapper .review-container:nth-child(3){
-            margin-bottom: 50px;
-        }
+    .contact_section .contact-title p {
+        font-size: 0.875rem;
+        line-height: 1.4rem; 
+    }
 
-        /*FAQ Section*/
+    /* Main Wrapper */
+    .contact_section .contact-wrapper {
+        flex-direction: column; 
+        width: 90%; 
+        height: fit-content;
+        border-radius: 20px;
+        padding: 1rem;
 
-        .faq_container{
-            width: 100%;
-            padding: 1rem;
-        }
+    }
 
-        /*Footer Section*/
+    /* Contact Containers */
+    .contact_section .contact-wrapper .contact-container {
+        width: 100%; 
+        height: auto;
+        text-align: center;
+    }
 
-        .footer-container{
-            flex-direction: column;
-        }
+    .contact-container .contact-img {
+        width: 60px; 
+        height: 60px;
+        margin-bottom: 20px; 
+        font-size: 24px; 
+    }
 
-        .footer-logo{
-            width: 100%;
-            height: auto;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
-           margin: 30px 0px;
-        }
+    .contact-img .fa-solid {
+        font-size: 24px; 
+        color: var(--color-5--);
+    }
 
-        .footer-columns{
+    /* Text */
+    .contact-container h3 {
+        font-size: 1.25rem; 
+    }
+
+    .contact-container p {
+        font-size: 0.875rem;
+        line-height: 1.4rem;
+    }
+    /*Review Section*/
+    .review_section {
+        height: auto;
+        align-items: center;
+        align-content: center;
+    }
+    .review_section .review-wrapper{
+        flex-direction: column;
+        width: 90%;
+        gap: 50px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .review-container{
+        padding: 1rem;
+    }
+    .review-wrapper .review-container:nth-child(3){
+        margin-bottom: 50px;
+    }
+
+    /*FAQ Section*/
+
+    .faq_container{
         width: 100%;
-        gap: 10px;
-        justify-content: center;
-        }
+        padding: 1rem;
+    }
 
-        .social{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin: 10px 0;
-        }
+    /*Footer Section*/
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-logo{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+       margin: 30px 0px;
+    }
+
+    .footer-columns{
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    }
+
+    .social{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+ 
 }
+
+}
+        
