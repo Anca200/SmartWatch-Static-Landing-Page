@@ -1030,6 +1030,7 @@ nav{
         height: auto;
         align-items: center;
         align-content: center;
+      
     }
     .review_section .review-wrapper{
         flex-direction: column;
@@ -1056,6 +1057,7 @@ nav{
 
     .footer-container{
         flex-direction: column;
+        padding: 1rem;
     }
 
     .footer-logo{
@@ -1070,8 +1072,9 @@ nav{
 
     .footer-columns{
     width: 100%;
-    gap: 10px;
+   justify-content: center;
     justify-content: center;
+    margin-bottom: 20px;
     }
 
     .social{
