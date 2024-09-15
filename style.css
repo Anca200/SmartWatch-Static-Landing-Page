@@ -972,7 +972,6 @@ nav{
 
   /* Contact Section */
     .contact_section {
-        padding: 10px; 
         align-content: center;
     }
 
@@ -996,10 +995,15 @@ nav{
     .contact_section .contact-wrapper {
         flex-direction: column; 
         width: 90%; 
-        height: fit-content;
+       height: auto;
         border-radius: 20px;
+        overflow: none;
         padding: 1rem;
-
+    }
+    .contact-sub{
+        width: 100%;
+        height: auto;
+        background-color: red;
     }
 
     /* Contact Containers */
@@ -1051,6 +1055,7 @@ nav{
         margin-bottom: 50px;
     }
 
+
     /*FAQ Section*/
 
     .faq_container{
@@ -1062,7 +1067,7 @@ nav{
 
     .footer-container{
         flex-direction: column;
-        padding: 1rem;
+      
     }
 
     .footer-logo{
@@ -1076,9 +1081,7 @@ nav{
     }
 
     .footer-columns{
-    width: 100%;
-   justify-content: center;
-    justify-content: center;
+    width: 90%;
     margin-bottom: 20px;
     }
 
