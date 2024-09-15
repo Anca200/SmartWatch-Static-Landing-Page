@@ -1083,6 +1083,7 @@ nav{
     .footer-columns{
     width: 90%;
     margin-bottom: 20px;
+    flex-direction: column;
     }
 
     .social{
