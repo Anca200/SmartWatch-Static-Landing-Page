@@ -8,6 +8,7 @@
     <title>TimeWave</title>
     <link rel="icon" type="image/x-icon" href="./resources/favicon.png"> <!--Favicon-->
     <link rel="stylesheet" href="./style.css"/> <!--CSS Page-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--AOS Animations-->
 </head>
 
 <body>
@@ -33,7 +34,11 @@
 
         <!--Hero Section-->
 
-        <section class="hero_section"> <!--Left Side-->
+        <section class="hero_section"
+        data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1000"> <!--Left Side-->
             <div class="hero_left">
                 <h1>Experience the <span>Future</span></h1>
                 <p>Dive into endless possibilities with our waterproof smartwatch. Stylish and advanced, it delivers real-time insights and cutting-edge features, all while staying protected against the elements. Ready for anything, wherever you go. </p>
@@ -367,8 +372,9 @@
             <p>&copy; 2024 TimeWave. All rights reserved.</p>
         </div>
       </footer>
-</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--AOS Animations-->
 <script src="./app.js"></script>
-<!--FontAwesome Icons-->
-<script src="https://kit.fontawesome.com/1b757b43bb.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/1b757b43bb.js" crossorigin="anonymous"></script> <!--FontAwesome Icons-->
+</body>
 </html>

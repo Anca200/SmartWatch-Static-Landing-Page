@@ -1,3 +1,4 @@
+AOS.init(); //AOS Animations
 //Nav
 const hamburgerButton = document.querySelector(".hamburgerMenu");
 const navLinks = document.querySelector(".navLinks");
